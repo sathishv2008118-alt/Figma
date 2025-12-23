@@ -29,6 +29,31 @@ Publish the website in the given URL.
 Figma
 
 # CODE:
-# OUTPUT:
+```import { MobilePhone } from "./components/MobilePhone";
+import { PhoneScreen1 } from "./components/PhoneScreen1";
+import { PhoneScreen2 } from "./components/PhoneScreen2";
+import { PhoneScreen3 } from "./components/PhoneScreen3";
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center p-8">
+      <div className="flex flex-wrap items-center justify-center gap-8 max-w-7xl">
+        <MobilePhone>
+          <PhoneScreen1 />
+        </MobilePhone>
+        
+        <MobilePhone>
+          <PhoneScreen2 />
+        </MobilePhone>
+        
+        <MobilePhone>
+          <PhoneScreen3 />
+        </MobilePhone>
+      </div>
+    </div>
+  );
+}
+```
+# OUTPUT:![alt text](<Screenshot 2025-12-23 205456.png>)
 # RESULT:
 The program to design, develop and deploy a web application for event registration is completed successfully.
